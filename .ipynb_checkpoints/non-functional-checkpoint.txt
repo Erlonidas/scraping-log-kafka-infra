@@ -1,0 +1,7 @@
+\fraglimit\20: Estabelece o limite de frags (eliminações) necessárias para vencer a partida. Neste caso, o limite é de 20 eliminações
+
+\timelimit\15: Define o limite de tempo da partida, em minutos. Aqui, o limite de tempo é de 15 minutos.
+
+\sv_maxclients\16: Define o número máximo de jogadores que podem estar conectados ao servidor simultaneamente, que é 16 neste caso.
+
+\g_maxGameClients\0: Especifica o número máximo de jogadores clientes no jogo. O valor "0" indica que não há limite definido.
