@@ -1,0 +1,3 @@
+comando para sendLog.py (Kafka)
+                      (endereço do broker-kafka) + (topic)
+>> python sendLog.py localhost:19092 onlyTopicDone

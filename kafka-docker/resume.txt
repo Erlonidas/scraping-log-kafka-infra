@@ -1,0 +1,14 @@
+i) O docker-compose voce orquestra os containers que irão ser manipulados no mesmo pacote. Pra iniciar e stopar os containers, voce usa os seguintes comandos:
+	docker-compose up -d // docker-compose stop
+	(o docker desktop precisa ta inicializado)
+
+ii) Define um topico + repartições + replicação no servidor geral. 
+	docker-topics --create --bootstrap-server "url broker" --replication-factor 2 --partition 3 --topic "nome do tópico"
+
+-> Para verificar quantos topicos foram criados dentro daquele broker: kafka-topics --list --bootstrap-server localhost:"ip do broker"
+
+-> Não importa muito o container que voce acessa e o broker estiver em outro host.
+
+iii) Tanto o consumer quanto o producer são instancias. Elas se conectam e usam o kafka. Elas nao ficam armazenadas no conteiner.
+
+-> Criação de producer pelo CLI: kafka-console-producer --broker-list localhost:"numero do broker" --topic "topico existente"

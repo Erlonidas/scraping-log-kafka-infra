@@ -1,0 +1,4 @@
+confluent-kafka
+pymongo
+numpy
+pandas

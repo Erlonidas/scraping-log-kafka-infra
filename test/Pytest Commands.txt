@@ -1,0 +1,5 @@
+comando para printar report html do pytest:
+
+pytest .\test_gamesets.py --html=test_gamesets.html >report.log --junitxml=report.xml
+
+>>> pytest 'nome_do_arquivo.py' --html='titulo do Report' > report.log --junitxml=report.xml
